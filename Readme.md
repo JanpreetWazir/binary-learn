@@ -34,4 +34,20 @@ echo "Knock , Knock : $USER"
 
 
 
+## Next creating the same script using python
+#!/usr/bin/python3.6
+
+import sys
+
+if len(sys.argv)==2:
+    print("Knock Knock {0}".format(sys.argv[1]))
+else:
+    sys.stderr.write("Usage: {0} <name>\n".format(sys.argv[0]))
+
+
+# Here shebang is used to directly run this script as python not using cmd python first.py , Drectly ./first.py
+
+
+
+
 ##
